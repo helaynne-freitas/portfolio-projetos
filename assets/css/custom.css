@@ -320,6 +320,15 @@ ul.contact li a:hover {
   color: #005eff;
 }
 
+#menu .logo img {
+  max-width: 120px;   /* controla o tamanho */
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+
+
 
 
 
