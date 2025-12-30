@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  background-color: #0c121b;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #005eff;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+a.button {
+  background-color: #005eff;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+a.button:hover {
+  background-color: #0047c4;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skills h3 {
+  color: #005eff;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li::before {
+  content: "▹";
+  color: #005eff;
+  margin-right: 8px;
+}
+
+.highlight {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #005eff;
+  opacity: 0.9;
+}
+/* =========================
+   CORES BASE
+========================= */
+
+:root {
+  --bg-dark: #0c121b;
+  --blue-main: #005eff;
+  --white: #ffffff;
+}
+
+/* =========================
+   FUNDO GERAL + SIDEBAR
+========================= */
+
+body,
+#wrapper,
+#main,
+#sidebar {
+  background-color: var(--bg-dark);
+}
+
+#sidebar {
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+body, p, li, span {
+  color: var(--white);
+}
+
+h1, h2, h3, h4 {
+  color: var(--white);
+}
+
+/* =========================
+   REMOVE VERMELHO (GLOBAL)
+========================= */
+
+/* Linhas decorativas */
+header.major > :first-child:after {
+  background-color: var(--blue-main);
+}
+
+/* Ícones e detalhes */
+.icon:before {
+  color: var(--blue-main);
+}
+
+/* =========================
+   MENU LATERAL
+========================= */
+
+#menu ul a {
+  color: var(--white);
+}
+
+#menu ul a:hover {
+  color: var(--blue-main);
+}
+
+/* Linha ativa do menu */
+#menu ul li.active > a {
+  color: var(--blue-main);
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.button,
+button,
+input[type="submit"] {
+  background-color: var(--blue-main) !important;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background-color: #0047c4 !important;
+}
+
+/* =========================
+   HAMBURGUER (☰)
+========================= */
+
+#header .toggle:before {
+  color: var(--blue-main);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: var(--blue-main);
+}
+
+a:hover {
+  color: #4d84ff;
+}
+
+/* =========================
+   POSTS / CARDS
+========================= */
+
+.posts article {
+  background: rgba(255,255,255,0.02);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.posts article:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+#search input {
+  background-color: rgba(255,255,255,0.05);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+#search input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+/* =========================
+   SEARCH (FUNDO ESCURO)
+========================= */
+
+#search {
+  background-color: var(--bg-dark);
+}
+
+#search input {
+  background-color: var(--bg-dark) !important;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: none;
+}
+
+#search input:focus {
+  border-color: var(--blue-main);
+  box-shadow: none;
+}
+
+/* Ícone da lupa */
+#search .icon:before {
+  color: rgba(255,255,255,0.6);
+}
+
+/* =========================
+   REMOVE LINHAS VERMELHAS
+========================= */
+
+/* Linha embaixo de "Menu" */
+#menu header.major > h2:after {
+  background-color: var(--blue-main) !important;
+}
+
+/* Linhas entre itens do menu */
+#menu ul li {
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   BOTÃO SEM CONTORNO VERMELHO
+========================= */
+
+.button {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.button:before,
+.button:after {
+  display: none !important;
+}
+
+/* Remove outline vermelho no foco */
+.button:focus {
+  outline: none !important;
+}
+
+/* =========================
+   GARANTIA: NENHUM VERMELHO SOBREVIVE
+========================= */
+
+* {
+  accent-color: var(--blue-main);
+}
+/* =========================
+   MATA A LINHA DO "MENU" (DE VEZ)
+========================= */
+
+#menu header.major {
+  border-bottom: none !important;
+}
+
+#menu header.major h2 {
+  border-bottom: none !important;
+}
+
+/* caso o tema use pseudo-elemento */
+#menu header.major h2:after {
+  display: none !important;
+}
+/* =========================
+   REMOVE TODAS AS LINHAS DO EDITORIAL
+========================= */
+
+header.major {
+  border-bottom: none !important;
+}
+
+header.major > :first-child:after {
+  display: none !important;
+}
+
+header.major h2,
+header.major h3 {
+  border-bottom: none !important;
+}
+
+
+/* =========================
+   REMOVE DIVISÓRIAS DOS POSTS
+========================= */
+
+.posts {
+  border-top: none !important;
+}
+
+.posts article {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove linhas horizontais entre linhas do grid */
+.posts > article {
+  border-top: none !important;
+}
+
+/* Caso o tema use pseudo-elemento */
+.posts:before,
+.posts:after {
+  display: none !important;
+}
+
+
+
+
+
+
+/* Remove o fundo branco do search */
+#search,
+#search form,
+#search input[type="text"] {
+  background: #0e131e;
+  box-shadow: none;
+  border: none;
+  color: #ffffff;
+}
+
+/* Placeholder do search */
+#search input::placeholder {
+  color: #8fa3c7;
+}
+
+/* Ícone da lupa (se existir via pseudo-element ou font-awesome) */
+#search:before {
+  color: #005eff;
+}
+
+/* Ícones da seção de contato */
+ul.contact li:before {
+  color: #005eff;
+}
+
+/* Links do contato (email e linkedin) */
+ul.contact li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul.contact li a:hover {
+  color: #005eff;
+}
+
+
+
