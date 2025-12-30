@@ -90,10 +90,6 @@ h1, h2, h3, h4 {
   color: var(--white);
 }
 
-/* =========================
-   REMOVE VERMELHO (GLOBAL)
-========================= */
-
 /* Linhas decorativas */
 header.major > :first-child:after {
   background-color: var(--blue-main);
@@ -210,9 +206,6 @@ a:hover {
   color: rgba(255,255,255,0.6);
 }
 
-/* =========================
-   REMOVE LINHAS VERMELHAS
-========================= */
 
 /* Linha embaixo de "Menu" */
 #menu header.major > h2:after {
@@ -224,9 +217,7 @@ a:hover {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* =========================
-   BOTÃO SEM CONTORNO VERMELHO
-========================= */
+
 
 .button {
   border: none !important;
@@ -243,16 +234,9 @@ a:hover {
   outline: none !important;
 }
 
-/* =========================
-   GARANTIA: NENHUM VERMELHO SOBREVIVE
-========================= */
-
 * {
   accent-color: var(--blue-main);
 }
-/* =========================
-   MATA A LINHA DO "MENU" (DE VEZ)
-========================= */
 
 #menu header.major {
   border-bottom: none !important;
@@ -266,9 +250,6 @@ a:hover {
 #menu header.major h2:after {
   display: none !important;
 }
-/* =========================
-   REMOVE TODAS AS LINHAS DO EDITORIAL
-========================= */
 
 header.major {
   border-bottom: none !important;
@@ -282,11 +263,6 @@ header.major h2,
 header.major h3 {
   border-bottom: none !important;
 }
-
-
-/* =========================
-   REMOVE DIVISÓRIAS DOS POSTS
-========================= */
 
 .posts {
   border-top: none !important;
@@ -307,10 +283,6 @@ header.major h3 {
 .posts:after {
   display: none !important;
 }
-
-
-
-
 
 
 /* Remove o fundo branco do search */
@@ -347,6 +319,7 @@ ul.contact li a {
 ul.contact li a:hover {
   color: #005eff;
 }
+
 
 
 
