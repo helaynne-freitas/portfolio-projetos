@@ -321,11 +321,15 @@ ul.contact li a:hover {
 }
 
 #menu .logo img {
-  max-width: 120px;   /* controla o tamanho */
+  max-width: 130px;
   height: auto;
   display: block;
   margin: 1.5rem auto;
 }
+
+
+margin: 1rem auto;
+
 
 
 
