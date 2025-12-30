@@ -2273,12 +2273,5 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-#menu .logo img {
-  max-width: 120px;   /* controla o tamanho */
-  height: auto;
-  display: block;
-  margin: 1.5rem auto;
-}
-
 
 
